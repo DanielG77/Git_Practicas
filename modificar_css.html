@@ -11,6 +11,7 @@
 <body>
     <header class="site-header">
         <h1>JS aplicado a interacciones con HTML</h1>
+        <!-- Esta es la cabezera de navegacion que nos permite movernos por la aplicacion -->
         <nav>
             <a href="index.html">Home</a>
             <a href="modificar_contenido.html">Modificar contenido HTML</a>
@@ -21,22 +22,23 @@
     </header>
     <main>
         <section id="home" class="panel">
-            <h2>JavaScript puede cambiar estilos CSS</h2>
 
-            <p id="demo">JavaScript puede cambiar el estilo de este texto.</p>
+            <h2>What Can JavaScript Do?</h2>
 
-            <button type="button" onclick='document.getElementById("demo").style.color = "red"'>Hacer texto
-                ROJO</button>
-            <button type="button" onclick='document.getElementById("demo").style.fontSize = "35px"'>Agrandar
-                texto</button>
-            <button type="button" onclick='document.getElementById("demo").style.backgroundColor = "yellow"'>Fondo
-                amarillo</button>
+            <p id="demo">JavaScript can change the style of an HTML element.</p>
+
+            <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+            <!-- Al pulsar el boton es sustituira los valores predeterminados al styles.css -->
         </section>
     </main>
-
     <footer class="site-footer">
         <p>Práctica - Sistema de control de versiones (simulación) - Equipo: usuario1, usuario2, usuario3</p>
     </footer>
+    <!-- El footer esta preparado para ofrecer informacion a futuro de marcas relacionadas o diversa informacion de la web -->
+
+    <script src="js/app.js"></script>
+
 </body>
+
 
 </html>
