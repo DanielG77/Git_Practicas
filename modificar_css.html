@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Curso: JS aplicado a HTML — Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>JS aplicado a interacciones con HTML</h1>
+        <!-- Esta es la cabezera de navegacion que nos permite movernos por la aplicacion -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="modificar_contenido.html">Modificar contenido HTML</a>
+            <a href="modificar_atributo.html">Modificar atributos HTML</a>
+            <a href="modificar_css.html">Modificar estilos CSS</a>
+            <a href="docs/index.html" target="_blank">Documentación</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="panel">
+
+            <h2>What Can JavaScript Do?</h2>
+
+            <p id="demo">JavaScript can change the style of an HTML element.</p>
+
+            <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+            <!-- Al pulsar el boton es sustituira los valores predeterminados al styles.css -->
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>Práctica - Sistema de control de versiones (simulación) - Equipo: usuario1, usuario2, usuario3</p>
+    </footer>
+    <!-- El footer esta preparado para ofrecer informacion a futuro de marcas relacionadas o diversa informacion de la web -->
+
+    <script src="js/app.js"></script>
+
+</body>
+
+
+</html>
