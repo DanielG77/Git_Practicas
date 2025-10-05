@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ca">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Documentació — Pràctica: Sistema de control de versions</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 1000px;
+      margin: 1.5rem auto;
+      padding: 1rem;
+      color: #222
+    }
+
+    header {
+      border-bottom: 3px solid #0b66a3;
+      padding-bottom: .5rem;
+      margin-bottom: 1rem
+    }
+
+    h1 {
+      color: #0b66a3;
+      margin: 0
+    }
+
+    .meta {
+      color: #666;
+      font-size: .95rem;
+      margin-top: .25rem
+    }
+
+    nav a {
+      margin-right: .8rem;
+      color: #0b66a3;
+      text-decoration: none
+    }
+
+    section {
+      margin-top: 1.2rem
+    }
+
+    .captures {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: .6rem
+    }
+
+    .captures figure {
+      width: calc(50% - 6px);
+      margin: 0
+    }
+
+    .captures img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      display: block
+    }
+
+    figcaption {
+      font-size: .9rem;
+      color: #444;
+      padding: .3rem 0
+    }
+
+    .btn {
+      display: inline-block;
+      background: #0b66a3;
+      color: white;
+      padding: .35rem .6rem;
+      border-radius: 6px;
+      text-decoration: none
+    }
+
+    footer {
+      margin-top: 2rem;
+      color: #666;
+      font-size: .9rem;
+      border-top: 1px solid #eee;
+      padding-top: .8rem
+    }
+
+    pre {
+      background: #f7f7f7;
+      padding: .6rem;
+      border-radius: 6px;
+      overflow: auto
+    }
+
+    @media (max-width:600px) {
+      .captures figure {
+        width: 100%
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Documentació — Sistema de control de versions</h1>
+    <div class="meta">Versió pública de la documentació (fills del projecte). Font: Pràctica — Sistema de control de
+      versions. :contentReference[oaicite:1]{index=1}</div>
+    <nav>
+      <a href="#resum">Resum</a>
+      <a href="#procés">Procés</a>
+      <a href="#captures">Captures</a>
+      <a href="#pdf">Informe (PDF)</a>
+    </nav>
+  </header>
+
+  <section id="resum">
+    <h2>Resum del projecte</h2>
+    <p>Aquí presentem una síntesi de l'organització i l'estat del projecte (sense incloure l'enunciat complert). Equip:
+      <strong>usuari1</strong> (repo i proves), <strong>usuari2</strong> (contingut i atributs),
+      <strong>usuari3</strong> (estils i release).
+    </p>
+    <ul>
+      <li><strong>Branques principals:</strong> <code>main</code> (producció), <code>develop</code> (desenvolupament)
+      </li>
+      <li><strong>Features:</strong> <code>feature/contingutHTML</code>, <code>feature/atributsHTML</code>,
+        <code>feature/estilsCSS</code>
+      </li>
+      <li><strong>Hotfix:</strong> <code>hotfix/milloresV_1_0</code></li>
+      <li><strong>Release:</strong> <code>v1.0</code> (usuari3) i tags de patch si s'han creat</li>
+    </ul>
+  </section>
+
+  <section id="procés">
+    <h2>Procés realitzat (resum)</h2>
+    <p>Treball seguint la metodologia <strong>Git Flow</strong>: features desenvolupades en rames
+      <code>feature/...</code>, una <code>release/1.0</code> etiquetada i un <code>hotfix/milloresV_1_0</code> aplicat a
+      <code>main</code>. Els commits segueixen el format suggerit a la pràctica (ex.:
+      <code>usuari2: feat(contingutHTML): ...</code>).
+    </p>
+    <p>Per al detall lineal del procés (comandes + captures), mira la secció <em>Captures</em> i baixa l'informe PDF si
+      ho necessites.</p>
+  </section>
+
+  <section id="captures">
+    <h2>Captures del procés (ordenades segons PDF)</h2>
+    <p>Les imatges estan ordenades per nom i mostren el workflow: creació de repo, features, merges, release i hotfix.
+    </p>
+
+    <div class="captures" id="gallery">
+      <!-- Les imatges es creen amb JS en ordre -->
+    </div>
+  </section>
+
+  <section id="pdf" style="margin-top:1.2rem">
+    <h2>Informe (PDF)</h2>
+    <p>Pots descarregar l'informe — substitut del canvas — que conté la taula amb cada feature/hotfix i captures:</p>
+    <p><a class="btn" href="projecte-canvas.pdf" download>Descarregar projecte-canvas.pdf</a></p>
+  </section>
+
+  <footer>
+    <p>Entrega: pràctica de “Sistemes de control de versions”. Autors: usuari1, usuari2, usuari3 — © 2025</p>
+  </footer>
+
+  <script>
+    // Llista de captures (ordenada tal com m'has proporcionat). Si algun nom no existeix aquí, s'ignora.
+    const captures = [
+      "captures/captura1.png", "captures/captura2.png", "captures/captura3.png", "captures/captura4.png",
+      "captures/captura5.png", "captures/captura6.png", "captures/captura7.png", "captures/captura8.png",
+      "captures/captura9.png", "captures/captura91.png", "captures/captura92.png", "captures/captura93.png",
+      "captures/captura94.png", "captures/captura95.png", "captures/captura96.png", "captures/captura97.png",
+      "captures/captura98.png", "captures/captura99.png", "captures/captura991.png", "captures/captura992.png",
+      "captures/captura993.png", "captures/captura994.png", "captures/captura995.png", "captures/captura996.png",
+      "captures/captura997.png", "captures/captura998.png", "captures/captura999.png", "captures/captura9991.png",
+      "captures/captura9992.png", "captures/captura9993.png", "captures/captura9994.png", "captures/captura9995.png"
+    ];
+
+    const gallery = document.getElementById('gallery');
+
+    captures.forEach((path, idx) => {
+      const fig = document.createElement('figure');
+      const img = document.createElement('img');
+      img.src = path;
+      img.alt = `Captura ${idx + 1}`;
+      // caption: sovint el PDF té seccions; posem una llegenda simple
+      const cap = document.createElement('figcaption');
+      cap.textContent = `Captura ${idx + 1} — referència del PDF`;
+      fig.appendChild(img);
+      fig.appendChild(cap);
+      gallery.appendChild(fig);
+    });
+  </script>
+</body>
+
+</html>
